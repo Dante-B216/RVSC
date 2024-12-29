@@ -157,8 +157,8 @@ def mask_to_image(mask: np.ndarray, mask_values):
 if __name__ == '__main__':
     sys.argv = [
         'predict.py',
-        '--pth', './i-checkpoints/unet_checkpoint_epoch5.pth',
-        '--input', './test1_data/imgs/P20-0040.png',
+        '--pth', './i-checkpoints/unet_checkpoint_epoch50.pth',
+        '--input', './test1_data/imgs/P17-0080.png',
         '--scale', '0.5',
         '--viz',
         '--no-save'
