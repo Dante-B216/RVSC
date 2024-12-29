@@ -249,19 +249,19 @@ if __name__ == '__main__':
     base_dir = '.'
 
     # 调用函数复制并处理训练集数据，将文件从源位置复制到目标文件夹
-    copy_and_process_files(base_dir, 'TrainingSet', 'train_data', 1, 8)
+    copy_and_process_files(base_dir, 'TrainingSet', 'train_data', 1, 16)
 
     # 调用函数复制并处理测试集1的轮廓数据
-    copy_contours(base_dir, 'TestSet', "Test1SetContours", "Test1Set", 17, 24)
+    copy_contours(base_dir, 'TestSet', "Test1SetContours", "Test1Set", 17, 32)
 
     # 调用函数复制并处理测试集2的轮廓数据
-    copy_contours(base_dir, 'TestSet', "Test2SetContours", "Test2Set", 25, 32)
+    copy_contours(base_dir, 'TestSet', "Test2SetContours", "Test2Set", 33, 48)
 
     # 调用函数复制并处理测试集1的图像和掩膜数据
-    copy_and_process_files(base_dir, 'TestSet/Test1Set', 'test1_data', 17, 24)
+    copy_and_process_files(base_dir, 'TestSet/Test1Set', 'test1_data', 17, 32)
 
     # 调用函数复制并处理测试集2的图像和掩膜数据
-    copy_and_process_files(base_dir, 'TestSet/Test2Set', 'test2_data', 25, 32)
+    copy_and_process_files(base_dir, 'TestSet/Test2Set', 'test2_data', 33, 48)
 
     # 打印文件复制和处理完成的提示信息
     print("Copying and processing files finished.")
