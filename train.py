@@ -318,14 +318,14 @@ if __name__ == '__main__':
         imgs='./train_data_aug/imgs/',  # 输入图像目录
         masks='./train_data_aug/i-masks/',  # 分割掩码目录
         save='./i-checkpoints/',  # 检查点保存目录
-        epochs=5,  # 训练轮数
-        batch_size=1,  # 每个批次的样本数量
+        epochs=100,  # 训练轮数
+        batch_size=64,  # 每个批次的样本数量
         lr=1e-5,  # 学习率
         pth=None,  # 预训练模型文件路径（如果有）
         scale=0.5,  # 图像缩放比例
         val=10.0,  # 验证集占比（百分比）
         amp=False,  # 是否启用混合精度训练
-        weight_decay=1e-8,  # 权重衰减系数
+        weight_decay=1e-4,  # 权重衰减系数
         momentum=0.999,  # 动量
         gradient_clipping=1.0,  # 梯度裁剪值
         epochs_per_checkpoint=1,  # 每隔多少轮保存一次检查点
